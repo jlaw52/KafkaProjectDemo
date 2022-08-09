@@ -1,5 +1,6 @@
 package com.cognixia.jump.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,8 @@ public class InventoryServiceConsumer {
 		else {
 			System.out.println("Cannot consume order: purchase is empty");
 		}
+		
+		
 		//change purchase.quantity = purchase.getQuantity() - order.getQuantity()
 		//repo.save(purchase)
 	}
